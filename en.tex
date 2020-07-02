@@ -1,0 +1,78 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+\usepackage[scale=0.90]{geometry}
+\nopagenumbers{}
+
+% personal data
+\name{Nicolas}{Ballet}
+\title{Consultant - Junior Developer}
+\address{17 allée Nautilus}{67540 Ostwald}{24 years old}
+\phone[mobile]{06.47.08.78.06}
+\email{nicolasballet@live.fr}
+\social[github]{nab-os}
+\extrainfo{Car Driver licence}
+
+
+\newlength\Tripleitemmaincolumnwidth
+\newlength\tripleitemmaincolumnwidth
+
+\AtBeginDocument{%
+    \setlength\tripleitemmaincolumnwidth{%
+        \maincolumnwidth-2\hintscolumnwidth-2\separatorcolumnwidth}%
+        \setlength\tripleitemmaincolumnwidth{.333333\tripleitemmaincolumnwidth}%
+        }
+        \newcommand*{\cvtripleitem}[7][.25em]{%
+ \cvitem[#1]{#2}{%
+   \begin{minipage}[t]{\tripleitemmaincolumnwidth}#3\end{minipage}%
+   \hfill
+   \begin{minipage}[t]{\hintscolumnwidth}\raggedleft\hintstyle{#4}\end{minipage}%
+   \hspace*{\separatorcolumnwidth}%
+   \begin{minipage}[t]{\tripleitemmaincolumnwidth}#5\end{minipage}%
+   \hfill
+   \begin{minipage}[t]{\hintscolumnwidth}\raggedleft\hintstyle{#6}\end{minipage}%
+   \hspace*{\separatorcolumnwidth}%
+   \begin{minipage}[t]{\tripleitemmaincolumnwidth}#7\end{minipage}%
+   }%
+}
+
+\begin{document}
+\vspace*{-12mm}
+\makecvtitle
+\vspace*{-10mm}
+
+\section{Experiences}
+\subsection{Information Technology}
+\cventry{From February 2020}{Consultant}{Versusmind}{Strasbourg}{}{}
+\cventry{September 2019 - February 2020}{Intern}{Versusmind}{Strasbourg}{}{Développement d’une plateforme de recueil de consentements RGPD. Dans le cadre d'un stage de fin d'étude de ma formation d'ingénieur\newline{}Utilisation de: Angular, Spring, Azure DevOps}
+\cventry{September 2018 - February 2019}{Intern}{Institut de recherche Femto-ST}{Belfort}{}{Maintenance évolutive de la bibliothèque Libgeologic et migration vers OpenGL 4 : application à la mobilité véhiculaire. Dans le cadre d'un stage de milieu d'étude de ma formation d'ingénieur\newline{}Utilisation de: OpenGL, GLSL, C++14, GDAL}
+\cventry{January 2017 - February 2019}{President}{Association Rivlink}{Sevenans}{}{Administration d'un réseau local d'une résidence étudiante.}
+\cventry{July 2016}{Developer}{E-novations}{Dijon}{}{Développement web et backend via Node.js}
+\cventry{April 2016 - June 2016}{Intern}{E-novations}{Dijon}{}{Développement web et backend via Node.js}
+\subsection{Others}
+\cventry{February 2019 - Today}{Vice-president}{Room 2135 association}{Sevenans}{}{Création d'escape games éphèmères pour des événements.}
+\cventry{July 2019 - August 2019}{Industrial design}{Ets Ballet Constructions}{Noidans-lès-Vesoul}{}{}
+\cventry{July 2018}{Industrial design}{Ets Ballet Constructions}{Noidans-lès-Vesoul}{}{}
+
+\section{IT Skills}
+\cvdoubleitem{Programming Langages}{C++17, Python, GLSL, C, HTML5, CSS3, Javascript}{Softwares}{Blender, Gimp, Neovim}
+\cvdoubleitem{Office suites}{\LaTeX, Libreoffice, Microsoft Office}{Technologies}{OpenGL, Vulkan, Node.js, GDAL}
+\cvdoubleitem{Databases}{SQLite, PostgreSQL, MySQL/MariaDB}{Others}{GNU/Linux, Raspberry, Arduino, \newline{}Android, Microsoft Windows}
+
+\section{Scholarship}
+\cventry{2016 - February 2020}{Diplôme d'ingénieur en informatique}{Université de Technologie de Belfort - Montbéliard}{Belfort}{}{Approfondissement des connaissances: mathématiques pour l'ingénieur, développement logiciel, réseaux Cisco et téléphonie, rendu temps réel, systèmes embarqués, ... Mais aussi de multiples enseignements en Humanité: philosophie, brevets pour l'ingénieur, animation sportive, ...}
+\cventry{2014 - 2016}{Diplôme Universitaire de Techonologie en informatique}{Institut Universitaire de Technologie de Dijon}{Dijon}{}{Bases de l'informatique: développement logiciel, réseau et systèmes embarqués, ...}
+\cventry{2011 - 2014}{Baccalauréat STI2D (Sciences et Technologies de l'Industrie et du Développement Durable)}{Lycée Edouard Belin}{Vesoul}{}{Spécialité Système d'Information et Numérique}
+
+\section{Languages}
+\cvitemwithcomment{French}{Mother tongue}{}
+\cvitemwithcomment{English}{C1 level (Bulats)}{}
+
+\section{Interests}
+\cvtripleitem{}{FSF Member}{}{System administration}{}{Software development}
+\cvtripleitem{}{Woodworking}{}{Metallurgy}{}{3D Printing}
+
+\end{document}
